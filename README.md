@@ -9,7 +9,7 @@ I have written a small WinDbg Extension to assist in parsing _SEGMENT_HEAP in th
 
 The usage is !\<command\> \<address\> where \<address\> is the address of the corresponding structure.
 A minor issue is how to find the address of _SEGMENT_HEAP. You can refer to the __ExAllocateHeapPool__ function and look for the code segment below.
-![Batch Build](media/0.png)
+![Batch Build](https://raw.githubusercontent.com/NoobCat2000/SegmentHeapExt/master/media/0.png)
 
 Set breakpoint to each line and get _SEGMENT_HEAP address. After finding the address of _SEGMENT_HEAP, you can also obtain the addresses of _HEAP_LFH_CONTEXT and _HEAP_VS_CONTEXT.
 
